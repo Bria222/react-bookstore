@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.navLinks li {
+  list-style: none;
+  margin: 0.5rem 1rem;
+}
+
+.navLink {
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.navLink:hover {
+  color: white;
+  background-color: #005c99;
+}
+
+.bookList {
+  list-style: none;
+}
+
+.bookContainer {
+  margin: 1rem auto;
+  border: 2px solid #005c99;
+  padding: 2rem;
+  width: 80%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 54px 55px, rgba(0, 0, 0, 0.12) 0 -12px 30px, rgba(0, 0, 0, 0.12) 0 4px 6px, rgba(0, 0, 0, 0.17) 0 12px 13px, rgba(0, 0, 0, 0.09) 0 -3px 5px;
+}
+
+.bookContainer span {
+  margin: 0.8rem;
+}
+
+.delete {
+  float: right;
+  font-size: 1rem;
+  border: none;
+  background-color: #194d33;
+  color: white;
+  padding: 6px;
+}
+
+.formContainer {
+  margin-left: 20%;
+  font-size: 35px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.addBook {
+  color: gray;
+  font-weight: bolder;
+}
+
+.formTitle {
+  padding-right: 22%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 2px;
+  border: 2px solid silver;
+}
+
+.formAuthor {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 2px;
+  border: 2px solid silver;
+}
+
+.input-submit {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background-color: rgb(29, 124, 231);
+  border: none;
+  border-radius: 5px;
+}
+
+.category {
+  display: flex;
+}
+
+.status {
+  width: 100px;
+  padding: 0.8rem;
+  margin: 1rem auto;
+}
