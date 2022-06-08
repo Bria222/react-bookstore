@@ -1,17 +1,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 
-function Book(props) {
-  const { bookProps } = props;
+function Book() {
   return (
     <li className="bookList">
       <div className="bookContainer">
-        <span>
-          {bookProps.title}
-          {' '}
-          by
-          {bookProps.author}
-        </span>
+        <span />
         <button type="button" className="delete">
           Delete
         </button>
