@@ -8,15 +8,17 @@ export const bookAdded = (book) => ({
 
 export const deleteBook = (id) => ({
   type: BOOK_DELETED,
-  payload: id,
+  id,
 });
 
-export default function bookReducer(state = [], action) {
+const initialState = [];
+
+export default function bookReducer(state = initialState, action) {
   switch (action.type) {
     case BOOK_ADDED:
-      return [...state, action.payload];
+      return [...state, { id: state.length + 1, ...action.payload }];
     case BOOK_DELETED:
-      return state.filter((action) => action.id !== action.payload);
+      return state.filter((book) => book.id !== action.id);
     default:
       return state;
   }
