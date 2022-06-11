@@ -1,5 +1,3 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
 # bookstore application
 
 > The Bookstore is created using react and redux. It allows you to:
@@ -7,6 +5,7 @@
     - Display list of books.
     - Add a book.
     - Remove a selected book.
+    - interact with an API
 
 ## Built With
 
@@ -67,9 +66,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc.
+thanks to Zeplin
+thanks to microvese
 
 ## 📝 License
 
