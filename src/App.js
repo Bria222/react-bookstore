@@ -9,17 +9,18 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div>
+      <div className="appContainer">
         <nav>
           <ul className="navLinks">
+            <li className="logo">Bookstore CMS</li>
             <li>
               <Link to="/" className="navLink">
-                Books
+                BOOKS
               </Link>
             </li>
             <li>
               <Link to="/categories" className="navLink">
-                Categories
+                CATEGORIES
               </Link>
             </li>
           </ul>
