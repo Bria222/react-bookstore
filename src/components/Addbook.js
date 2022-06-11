@@ -8,7 +8,7 @@ const Addbook = () => {
     item_id: '',
     title: '',
     author: '',
-    category: 'Favorites',
+    category: '',
   };
   const [bookState, setBookState] = useState(initialBookState);
 
@@ -44,6 +44,17 @@ const Addbook = () => {
           placeholder="Author"
           onChange={handleOnChange}
         />
+        <select
+          name="category"
+          className="formAuthor"
+          onChange={handleOnChange}
+        >
+          <option value="">Category</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Horror">Suspense</option>
+          <option value="Religious">Religious</option>
+          <option value="Romance">Romance</option>
+        </select>
         <button type="button" className="input-submit" onClick={handleSubmit}>
           Add book
         </button>
