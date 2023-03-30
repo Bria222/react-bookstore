@@ -5,8 +5,8 @@ import bookReducer from './books/books';
 import statusReducer from './categories/categories';
 
 const rootReducer = combineReducers({
-  books: bookReducer,
-  categories: statusReducer,
+	books: bookReducer,
+	categories: statusReducer,
 });
 
 const store = configureStore({ reducer: rootReducer }, applyMiddleware(thunk));
